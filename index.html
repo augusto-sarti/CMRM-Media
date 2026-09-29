@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Media resources for Computer Music: Representations and Models by Augusto Sarti.">
+  <title>CMRM Media Resources</title>
+  <style>
+    :root {
+      --ink: #18202a;
+      --muted: #5d6875;
+      --line: #d9e0e7;
+      --paper: #ffffff;
+      --wash: #f5f7f9;
+      --accent: #315f86;
+      --accent-soft: #eaf1f7;
+      --max: 980px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+    }
+    header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 42px 24px; }
+    header .wrap { padding-top: 54px; padding-bottom: 38px; }
+    h1, h2, h3 { line-height: 1.18; }
+    h1 { margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 3.55rem); font-weight: 600; }
+    .subtitle { margin: 0; color: var(--accent); font-size: 1.35rem; font-weight: 600; }
+    .intro { max-width: 760px; margin-top: 22px; color: var(--muted); font-size: 1.03rem; }
+    nav { margin-top: 26px; display: flex; gap: 10px; flex-wrap: wrap; }
+    nav a { color: var(--accent); background: var(--accent-soft); border: 1px solid #cfdde9; text-decoration: none; border-radius: 999px; padding: 7px 13px; font-weight: 600; font-size: .92rem; }
+    main .wrap { padding-top: 34px; }
+    .chapter-head { margin-bottom: 28px; }
+    .chapter-head h2 { margin: 0 0 7px; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; }
+    .chapter-head p { color: var(--muted); margin: 0; }
+    .section { margin: 36px 0 48px; }
+    .section h3 { margin: 0 0 6px; font-size: 1.3rem; }
+    .section-note { margin: 0 0 16px; color: var(--muted); }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+      margin: 12px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,.025);
+    }
+    .card h4 { margin: 0 0 6px; font-size: 1.05rem; }
+    .card p { margin: 0 0 13px; color: var(--muted); }
+    audio { width: 100%; height: 42px; }
+    .multi { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 12px; margin-top: 12px; }
+    .mini { background: #fbfcfd; border: 1px solid var(--line); border-radius: 9px; padding: 12px; }
+    .mini strong { display: block; margin-bottom: 7px; font-size: .94rem; }
+    .filelink { display: inline-block; margin-top: 8px; color: var(--accent); font-size: .84rem; text-decoration: none; }
+    .filelink:hover { text-decoration: underline; }
+    .notice { background: #fffdf7; border: 1px solid #e8dfc2; border-radius: 10px; padding: 14px 16px; color: #655b3e; }
+    .coming { padding: 26px; background: var(--paper); border: 1px dashed #c5ced7; border-radius: 12px; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); background: var(--paper); color: var(--muted); font-size: .9rem; }
+    footer .wrap { padding-top: 26px; padding-bottom: 30px; }
+    code { background: #eef2f5; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Computer Music: Representations and Models</h1>
+    <p class="subtitle">Media Resources</p>
+    <p class="intro">Companion listening examples and interactive resources for the lecture notes and course. The material on this page follows the organization and terminology of the book.</p>
+    <nav>
+      <a href="#chapter-1">Chapter 1</a>
+      <a href="#chapter-2">Chapter 2</a>
+      <a href="#chapter-4">Chapter 4</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <section id="chapter-1">
+    <div class="chapter-head">
+      <h2>Chapter 1 — Perception of Sound</h2>
+      <p>Listening examples accompanying the discussion of psychoacoustics, pitch, loudness, masking, auditory organization, and timbre.</p>
+    </div>
+
+    <div class="section">
+      <h3>Interference, beats, and auditory resolution</h3>
+      <p class="section-note">These examples move from physical interference to perceptual roughness and the limited frequency resolution of hearing.</p>
+
+      <article class="card">
+        <h4>First-order beats</h4>
+        <p>Two nearby tones illustrate the transition from separately perceived components to a fluctuating percept as their frequency separation becomes small.</p>
+        <audio controls preload="none" src="chapter-01/audio/beats.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/beats.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Risset's musical beats</h4>
+        <p>A harmonic complex is compared with a cluster of slightly detuned complexes and with an isolated upper-harmonic layer, revealing the rhythmic organization produced by beating among partials.</p>
+        <audio controls preload="none" src="chapter-01/audio/beats_risset.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/beats_risset.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Second-order beats</h4>
+        <p>Two components near a 2:1 frequency relation produce a slow cyclic percept that can be compared with ordinary first-order beating.</p>
+        <audio controls preload="none" src="chapter-01/audio/beats_secondary.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/beats_secondary.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Critical-band transition</h4>
+        <p>One sinusoid remains fixed while a second moves away from it. Listen for the transition from fusion and beating toward two separately resolved tones.</p>
+        <audio controls preload="none" src="chapter-01/audio/critical_band.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/critical_band.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Timbral consonance across a critical band</h4>
+        <p>The same basic two-component situation is presented at progressively larger separations, expressed as fractions of a critical bandwidth. Compare the subjective roughness across the sequence.</p>
+        <div class="multi">
+          <div class="mini"><strong>0 bandwidth</strong><audio controls preload="none" src="chapter-01/audio/cb_0.mp3"></audio></div>
+          <div class="mini"><strong>0.25 bandwidth</strong><audio controls preload="none" src="chapter-01/audio/cb_025.mp3"></audio></div>
+          <div class="mini"><strong>0.50 bandwidth</strong><audio controls preload="none" src="chapter-01/audio/cb_050.mp3"></audio></div>
+          <div class="mini"><strong>0.75 bandwidth</strong><audio controls preload="none" src="chapter-01/audio/cb_075.mp3"></audio></div>
+          <div class="mini"><strong>1.00 bandwidth</strong><audio controls preload="none" src="chapter-01/audio/cb_100.mp3"></audio></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Pitch, waveform, duration, and periodicity</h3>
+      <p class="section-note">These examples separate nominal fundamental frequency from waveform, duration, harmonicity, and the perceptual use of periodic structure.</p>
+
+      <article class="card">
+        <h4>Pitch, waveform, and duration</h4>
+        <p>Compare a sinusoid and a triangular wave at the same nominal fundamental frequency, then hear how a short 1-kHz tone changes as its duration is reduced. The cello and gamelan examples contrast harmonic and inharmonic spectral organizations.</p>
+        <div class="multi">
+          <div class="mini"><strong>Sine tone</strong><audio controls preload="none" src="chapter-01/audio/sine_tone.mp3"></audio></div>
+          <div class="mini"><strong>Triangle wave</strong><audio controls preload="none" src="chapter-01/audio/triangle_wave.mp3"></audio></div>
+          <div class="mini"><strong>Duration series</strong><audio controls preload="none" src="chapter-01/audio/click_duration.mp3"></audio></div>
+          <div class="mini"><strong>Cello</strong><audio controls preload="none" src="chapter-01/audio/vibrato_cello.mp3"></audio></div>
+          <div class="mini"><strong>Gamelan</strong><audio controls preload="none" src="chapter-01/audio/inharmonic_gamelan.mp3"></audio></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4>The missing fundamental</h4>
+        <p>First hear harmonics 1–4 of a 200-Hz series, then harmonics 2–4 only. The physical fundamental disappears in the second stimulus while the perceived pitch remains strongly related to the same periodicity.</p>
+        <div class="multi">
+          <div class="mini"><strong>With fundamental</strong><audio controls preload="none" src="chapter-01/audio/harmonics_1to4.mp3"></audio></div>
+          <div class="mini"><strong>Without fundamental</strong><audio controls preload="none" src="chapter-01/audio/harmonics_2to4.mp3"></audio></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Loudness</h3>
+      <p class="section-note">Physical sound level and perceived loudness are related, but the mapping is frequency-dependent and nonlinear.</p>
+
+      <article class="card">
+        <h4>Equal loudness</h4>
+        <p>Listen without changing the playback level. The demonstration illustrates that equal physical level does not imply equal perceived loudness across frequency.</p>
+        <audio controls preload="none" src="chapter-01/audio/equal_loudness.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/equal_loudness.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Changes in perceived loudness</h4>
+        <p>Compare examples designed to illustrate approximate “twice louder” judgements for a simple sound and for a complex sound.</p>
+        <div class="multi">
+          <div class="mini"><strong>Simple sound</strong><audio controls preload="none" src="chapter-01/audio/twice_louder.mp3"></audio></div>
+          <div class="mini"><strong>Complex sound</strong><audio controls preload="none" src="chapter-01/audio/complex_louder.mp3"></audio></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Masking</h3>
+      <article class="card">
+        <h4>Frequency masking</h4>
+        <p>A strong 500-Hz tone masks weaker nearby components. Listen in particular to the asymmetry between lower- and higher-frequency probes.</p>
+        <audio controls preload="none" src="chapter-01/audio/masking.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/masking.mp3">Open audio file</a>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Auditory scene analysis</h3>
+      <p class="section-note">The following demonstrations concern perceptual grouping: the same physical event sequence may be organized into different auditory streams or objects.</p>
+
+      <article class="card">
+        <h4>Sequential stream segregation — Bregman-style reconstruction</h4>
+        <p>A repeating six-tone high/low cycle is heard first slowly and then rapidly. At the faster rate, listen for its progressive reorganization into separate high and low streams.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_streaming.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_streaming.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Grouping by timbral similarity</h4>
+        <p>Two interleaved ostinati are heard first with a shared timbre and then with contrasting timbres. Compare how easily the latent lines can be followed in the two conditions.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_timbral_similarity.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_timbral_similarity.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Yodelling and perceptual streams</h4>
+        <p>Listen to the rapid alternation of vocal qualities and consider which features encourage continuity and which encourage segregation.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_yodelling.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_yodelling.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Interleaved familiar melodies</h4>
+        <p>Two familiar melodies are interleaved while their register separation changes. Listen for the transition from a densely interwoven sequence to two more readily traceable melodic streams.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_interleaving.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_interleaving.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Perceptual restoration of interrupted speech</h4>
+        <p>An utterance is interrupted first by silence and then by masking noise at the same locations. Compare how strongly the surviving speech fragments are perceptually connected across the interruptions.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_warren_loop.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_warren_loop.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Wessel effect — timbre-defined melodic streams</h4>
+        <p>The pitch sequence is held fixed while alternate tones are assigned contrasting timbres. Listen for a change in perceived melodic organization produced by timbral grouping alone.</p>
+        <audio controls preload="none" src="chapter-01/audio/Bregman/asa_wessel_loop.mp3"></audio>
+        <a class="filelink" href="chapter-01/audio/Bregman/asa_wessel_loop.mp3">Open audio file</a>
+      </article>
+
+      <article class="card">
+        <h4>Spatial organization</h4>
+        <p>Compare the cocktail-party and precedence-effect demonstrations. Headphones are recommended where appropriate; attend to spatial separation and arrival time as cues for source organization.</p>
+        <div class="multi">
+          <div class="mini"><strong>Cocktail party</strong><audio controls preload="none" src="chapter-01/audio/cocktail_party.mp3"></audio></div>
+          <div class="mini"><strong>Precedence effect</strong><audio controls preload="none" src="chapter-01/audio/precedence_effect.mp3"></audio></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="notice"><strong>Note.</strong> The page lists the listening examples referenced by the current Chapter 1 text. Additional source or archival files may be present in the repository without being exposed here.</p>
+  </section>
+
+  <section id="chapter-2" style="margin-top:64px">
+    <div class="chapter-head">
+      <h2>Chapter 2 — Perception of Music</h2>
+      <p>Companion media will be added here when the Chapter 2 materials are migrated.</p>
+    </div>
+    <div class="coming">Chapter 2 media resources are coming soon.</div>
+  </section>
+
+
+  <section id="chapter-4">
+    <div class="chapter-head">
+      <h2>Chapter 4 — Tonal Organization and Pitch Space</h2>
+      <p>Video demonstrations accompanying the discussion of relative pitch coordinates, modal representations, and pitch-space geometry.</p>
+    </div>
+
+    <div class="section">
+      <h3>Scale-relative coordinates reveal periodicity</h3>
+      <p class="section-note">The same melodic pattern can look irregular in chromatic semitone coordinates and regular when motion is measured in steps of the active scale.</p>
+
+      <article class="card">
+        <h4>Melodic pattern in semitone and modal-step coordinates</h4>
+        <p>In the upper display, successive-note distances are measured in semitones; the resulting sequence does not expose a simple periodic pattern. In the lower display, the same melodic motion is expressed as scale-step displacements relative to the active mode, revealing the repeated structure. This is the representation change discussed in the chapter as a separation of melodic pattern from modal context.</p>
+        <video controls preload="metadata" poster="chapter-04/video/bollini_modal_steps_poster.jpg" style="width:100%; border-radius:8px; background:#000;">
+          <source src="chapter-04/video/bollini_modal_steps.mp4" type="video/mp4">
+        </video>
+        <p style="margin-top:10px; font-size:.92rem;"><strong>Credit:</strong> video demonstration by Simone Bollini.</p>
+        <a class="filelink" href="chapter-04/video/bollini_modal_steps.mp4">Open video file</a>
+      </article>
+
+      <article class="card">
+        <h4>Jankó keyboard in performance</h4>
+        <p>A performance demonstration of the repeated Jankó layout. Watch how interval and chord shapes can be transferred across keys while retaining essentially the same geometry.</p>
+        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; background:#000;">
+          <iframe src="https://www.youtube.com/embed/FkN9-r7q7gg" title="Jankó keyboard in performance" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4>Cory Henry on Harpejji</h4>
+        <p>A musical counterpart to the discussion of translational pitch geometry on the Harpejji. Relate the visible hand shapes to the invariance of interval patterns under translation across the surface.</p>
+        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; background:#000;">
+          <iframe src="https://www.youtube.com/embed/RL50VnZY1Kk" title="Cory Henry on Harpejji" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">CMRM Media Resources — companion material for <em>Computer Music: Representations and Models</em>.</div>
+</footer>
+</body>
+</html>
